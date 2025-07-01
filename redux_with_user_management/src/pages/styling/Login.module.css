@@ -1,0 +1,29 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+  padding: 2rem;
+  background-color: #eacaca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.parentFormDiv{
+
+
+}
+
+.form{
+border:2px solid black;
+padding: 20px;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+}

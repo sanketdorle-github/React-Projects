@@ -1,26 +1,26 @@
 import React from "react";
-
+import styles from "./styling/Login.module.css";
 const Login = () => {
   return (
-    <div className="Container">
+    <div className={styles.container}>
       <h3>Login User</h3>
-      <div>
-        <form action="">
-          <label htmlFor="fName">First Name:</label>
-          <input type="text" name="fName" id="fName" placeholder="Jagan.." />
-          <label htmlFor="lName">Last Name:</label>
-          <input type="text" name="lName" id="lName" placeholder="doe.." />
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="jdoe@example.com"
-          />
-          <label htmlFor="email">Password:</label>
-          <input type="password" name="password" id="password" />
+      <div className={styles.parentFormDiv}>
+        <form action="" className={styles.form}>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="jdoe@example.com"
+            />
+          </div>
 
-          <input type="submit" value="Submit" />
+          <div>
+            <label htmlFor="email">Password:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <input type="submit" value="Submit" className="registerBtn" />
         </form>
       </div>
     </div>

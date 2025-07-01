@@ -9,6 +9,7 @@ input {
   border-radius: 11px;
   padding: 3px;
   font-size: 16px;
+  width: 70%;
   /* outline: none; */
 }
 input:focus {
@@ -25,14 +26,58 @@ label {
   cursor: pointer;
 }
 
-.mainDivv {
-  inset-block:
-  height: 50%;
-  width: 50%;
+
+.mainDivv{
+  width: 100%;
+  height: 100%;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 1-px;
+  
+ }
+ .nameInput{
+  width: 30%;
+ }
+ .nameDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+ }
+
+ .formDiv{
   display: flex;
   flex-direction: column;
+  gap:10px;
+ }
 
-  align-items: center;
-  border: 3px;
-  border: 2px solid green;
+ .registerBtn{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+ 
+ }
+ /* Full-width input fields */
+input[type=text], input[type=password] ,input[type=email]{
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 12px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formRegister{
+  border: 2px solid black ;
+  padding: 24px;
 }
