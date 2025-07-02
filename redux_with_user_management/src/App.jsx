@@ -10,6 +10,8 @@ import {
 import HomePage from "./pages/HomePage.jsx";
 import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   let navLinks = [
@@ -36,6 +38,17 @@ const App = () => {
             </>
           ))}
         </Routes>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       </BrowserRouter>
     </>
   );
