@@ -18,6 +18,10 @@
 
 
 }
+.token{
+  text-wrap-style: wrap;
+  overflow-wrap: break-word;
+}
 
 .form{
 border:2px solid black;
